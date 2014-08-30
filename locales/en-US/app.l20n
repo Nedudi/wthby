@@ -22,7 +22,7 @@
   within the scope of
 """>
 
-<eventDescAnchor "european code week">
+<eventDescAnchor "europe code week">
 <eventDescTag "(#codeEU)">
 
 <mainGoal "The main idea and goal">
@@ -65,8 +65,8 @@
 <whoCanNot "We DO NOT expect at hackathon:">
 <whoCanNotShort "We DO NOT expect:">
 <whoCanNot1 "HR (sorry, friends).">
-<whoCanNot2 ">Inadequate people, pessimists, fuddy-duddies.">
-<whoCanNot3 '"Conceptual startup creators" <span>(i.e., people who are only able to generate crazy ideas and are constantly looking for programmers to implement this ideas)</span>.'>
+<whoCanNot2 "Inadequate people, pessimists, fuddy-duddies.">
+<whoCanNot3 '"Conceptual startup creators" <span>(i.e., people who are only able to generate crazy <br>ideas and are constantly looking for programmers <br>to implement this ideas)</span>.'>
 
 <whatIsFishka "What is so special about What the Hack?">
 <whatIsFishkaText """
@@ -91,7 +91,7 @@
 <jury "The Jury">
 
 <whenAndWhere "Time and Place">
-<when "October 15-17, 2014">
+<when "October 17-19, 2014">
 <where "Business Club Imaguru<br />Minsk (Fabriciusa str., 4)">
 
 <organizers "Organizers and General Partners">

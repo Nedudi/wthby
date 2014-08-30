@@ -22,7 +22,7 @@
   в Беларуси в рамках
 """>
 
-<eventDescAnchor "european code week">
+<eventDescAnchor "europe code week">
 <eventDescTag "(#codeEU)">
 
 <mainGoal "Основная идея и цель">
@@ -65,7 +65,7 @@
 <whoCanNot "Кого мы НЕ ждём?">
 <whoCanNotShort "Мы НЕ ждем:">
 <whoCanNot1 "HR (простите, друзья).">
-<whoCanNot2 ">Неадекватных людей, пессимистов,<br /> консерваторов.">
+<whoCanNot2 "Неадекватных людей, пессимистов,<br /> консерваторов.">
 <whoCanNot3 '"Идейных стартаперов" <span>(т.е. людей,<br /> умеющих только лишь генерировать<br /> безумные идеи и постоянно ищущих<br /> программистов для их реализации)</span>.'>
 
 <whatIsFishka "В чем особенность?">
