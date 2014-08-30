@@ -1,7 +1,7 @@
 /* reset */
 a, article, aside, audio, b, body, canvas, caption, cite, div, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, label, li, nav, ol, p, section, small, span, strong, table, tbody, tfoot, thead, th, tr, u, ul, input {margin:0;padding:0;box-sizing: border-box;-moz-box-sizing: border-box;}
 blockquote, q {quotes:none}
-table, table td {padding:0;border:none;border-collapse:collapse} 
+table, table td {padding:0;border:none;border-collapse:collapse}
 a { outline:none; cursor: pointer; }
 img{ border: none;}
 
@@ -12,7 +12,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 
 /* END reset */
 
-@font-face {
+/* @font-face {
     font-family: 'kelson_sans_ruregular';
     src: url('../fonts/kelson_sans_regular_ru-webfont.eot');
     src: url('../fonts/kelson_sans_regular_ru-webfont.eot?#iefix') format('embedded-opentype'),
@@ -21,6 +21,18 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
          url('../fonts/kelson_sans_regular_ru-webfont.svg#kelson_sans_ruregular') format('svg');
     font-weight: normal;
     font-style: normal;
+} */
+
+@font-face {
+    font-family: 'kelson_sans_ruregular';
+    src: url('kelson_sans_regular_ru-webfont.eot');
+    src: url('kelson_sans_regular_ru-webfont.eot?#iefix') format('embedded-opentype'),
+         url('kelson_sans_regular_ru-webfont.woff') format('woff'),
+         url('kelson_sans_regular_ru-webfont.ttf') format('truetype'),
+         url('kelson_sans_regular_ru-webfont.svg#kelson_sans_ruregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 html, body{
@@ -44,6 +56,42 @@ a:hover,
 a:focus,
 a:active{
     text-decoration: none;
+}
+
+.lang{
+  text-align: right;
+  position: fixed;
+  right:1em;
+  top:1em;
+}
+
+.lang a{
+  text-decoration: none;
+  display: block;
+  border-right:4px solid #99d1ff;
+  padding-right:10px;
+  margin:4px 0;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color:#99d1ff;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.lang a:hover{
+  color:#ffffff;
+  border-right:4px solid #99d1ff;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.lang a.lang-active{
+  color:white;
+  border-right:4px solid white;
 }
 
 .standard-list,
@@ -76,7 +124,7 @@ a:active{
 
 .section-1{
     background-color: #2388db;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 45px;
 }
 
@@ -242,7 +290,7 @@ a:active{
 
 .item-number span{
     display: inline-block;
-    font: normal 320% 'kelson_sans_ruregular', Verdana, Arial, Tahoma;
+    font: normal 320% 'Exo 2', sans-serif;;
     color: white;
     width: 70px;
     margin: 0px 3px;
@@ -273,7 +321,7 @@ a:active{
 .main-caption,
 .not-caption{
     color: white;
-    font: normal 230% 'kelson_sans_ruregular', Verdana, Arial, Tahoma;
+    font: normal 230% 'Exo 2', sans-serif;;
 }
 
 .main-caption span{
@@ -292,6 +340,9 @@ a:active{
 
 .gold-link{
     color: #ffea00;
+}
+.blue-link{
+    color: #61B4FF;
 }
 
 /* 3 */
@@ -646,11 +697,22 @@ a:active{
 
 .copyright{
     display: inline-block;
-    padding: 35px 0px;
+    padding: 30px 0px;
+    text-align: left;
+}
+
+.copyright .copy{
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -khtml-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: inline-block;
 }
 
 .dark-text{
-    color: #99d1ff;
+    color: #99d1ff !important;
 }
 
 .contacts{
@@ -677,150 +739,150 @@ a:active{
 /* responsive */
 
 @media (max-width: 1050px){
-    
+
     .section-2,
     .section-4,
     .section-7{
         background-attachment: scroll;
     }
-    
+
     body{
         font: normal 18px 'PT Sans', Verdana, Arial, Tahoma;
     }
-    
+
     .section-indent {
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    
+
     .caption-indent {
         margin-bottom: 30px;
     }
-    
+
     .soc-section span,
     .labels span,
     .item-jury p,
     .footer{
         font-size: 80%;
     }
-    
+
     .reg-btn-wrapper{
         margin-top: -30px;
     }
-    
+
     .item-number span{
         width: 50px;
     }
-    
+
     .labels span{
         width: 115px;
     }
-    
+
     .countdown{
         padding: 45px 40px 55px;
         margin-top: -20px;
     }
-    
+
     .soc-section {
         padding: 40px 0px 0px;
     }
-    
+
     .thumbs-up li{
         background-position: left 8px;
     }
-    
+
     .cross li{
         background-position: left 13px;
     }
-    
+
     .inside-section{
         padding: 35px 100px;
         background: url('../images/light.svg') left center no-repeat,
                 url('../images/target.svg') right 40px no-repeat;
                 background-size: 200px 200px, 100px 100px;
     }
-    
+
     .inside-section .main-caption {
         margin-bottom: 40px;
     }
-    
+
     .wrapper-good {
         padding-top: 30px;
         background-size: 200px 200px;
         background-position: right center;
     }
-    
+
     .section-7 {
         padding-top: 60px;
         padding-bottom: 65px;
     }
-    
+
     .section-7 .standard-list {
         padding-top: 40px;
         padding-bottom: 50px;
     }
-    
+
     .middle-row img {
         padding: 15px;
     }
-    
+
     .singularity{
         padding: 30px 0px;
         background-size: 100% 100%;
     }
-    
+
     .target {
         padding: 15px 30px;
         margin-top: 40px;
     }
-    
+
     .nomination {
         padding-bottom: 50px;
         background-size: 100% 100%;
     }
-    
+
     .item-jury {
         padding: 0px 20px 45px;
     }
-    
+
     .contacts {
         padding: 0px 50px;
     }
-    
+
     .section-13 {
         padding-top: 50px;
         padding-bottom: 75px;
     }
-    
+
     .section-14 .main-caption {
         margin-bottom: 30px;
     }
-    
+
     .partners {
         margin-bottom: 50px;
     }
-    
+
     .no-inside {
         padding: 100px 0px;
     }
 }
 
 @media (max-width: 900px){
-    
+
     .section-13 {
         padding-bottom: 320px;
     }
-    
+
     .when-block {
         text-align: center;
         margin-left: 0px;
         margin-top: 25px;
     }
-    
+
     .imaguru{
         width: 150px;
     }
-    
+
     #map{
         position: absolute;
         left: 5%;
@@ -834,259 +896,259 @@ a:active{
     body {
         font: normal 16px 'PT Sans', Verdana, Arial, Tahoma;
     }
-    
+
     .section-indent {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    
+
     .section-2 .text {
         margin-top: 35px;
     }
-    
+
     .inside-section {
         padding: 20px 40px;
         background-size: 15% 100%, 15% 60%;
     }
-    
+
     .inside-section .main-caption {
         margin-bottom: 20px;
     }
-    
+
     .countdown {
         margin-top: -15px;
         padding: 35px 15px 45px;
     }
-    
+
     #defaultCountdown:before{
         display: none;
     }
-    
+
     .item-number span {
         width: 36px;
-        font: normal 250% 'kelson_sans_ruregular', Verdana, Arial, Tahoma;
+        font: normal 250% 'Exo 2', sans-serif;;
     }
-    
+
     .labels span {
         width: 88px;
     }
-    
+
     .reg-btn-wrapper {
         margin-top: -25px;
     }
-    
+
     .reg-btn {
         padding: 10px 50px;
         font: normal 112% 'PT Sans', Verdana, Arial, Tahoma;
     }
-    
-    .soc-section span, 
-    .labels span, 
-    .item-jury p, 
+
+    .soc-section span,
+    .labels span,
+    .item-jury p,
     .footer {
         font-size: 80%;
     }
-    
+
     .section-1 .text br,
     .place br{
         display: block;
     }
-    
+
     br{
         display: none;
     }
-    
+
     .thumbs-up li {
         background-position: left 6px;
     }
-    
+
     .cross li {
         background-position: left 11px;
     }
-    
-    .main-caption, 
+
+    .main-caption,
     .not-caption{
-        font: normal 190% 'kelson_sans_ruregular', Verdana, Arial, Tahoma;
+        font: normal 190% 'Exo 2', sans-serif;;
     }
-    
+
     .item-jury{
         display: block;
         font-size: 120%;
         padding: 20px 20px 35px;
 
     }
-    
+
     .item-jury p {
         max-width: 300px;
         margin: 20px auto;
     }
-    
+
     .middle-row span{
         display: block;
         padding: 15px;
     }
-    
+
     .when-block{
         margin-top: 35px;
     }
-    
+
     .wrapper-good {
         padding-top: 10px;
         background-size: 35% 100%;
     }
-    
+
     .section-7 {
         padding-top: 25px;
         padding-bottom: 40px;
     }
-    
+
     .section-7 .standard-list {
         padding-top: 10px;
         padding-bottom: 15px;
     }
-    
+
     .section-10{
         background-image: none;
     }
-    
+
     .wave{
         display: none;
     }
-    
+
     .singularity {
         padding: 15px 0px 30px;
     }
-    
+
     .target {
         padding: 10px 15px;
         margin-top: 30px;
     }
-    
+
     .section-11{
         background-image: none;
     }
-    
+
     .footer{
         text-align: left;
         padding: 15px 15px 50px;
-    } 
-    
+    }
+
     .copyright{
         position: absolute;
         left: 15px;
         bottom: 15px;
         padding: 0px;
     }
-    
+
     .contacts{
         padding: 0px 50px 0px 0px;
     }
-    
+
     .no-inside {
         padding: 35px 20px;
     }
-    
-    .section-5 .not-caption, 
-    .section-8 .not-caption, 
-    .section-5 .thinner-list, 
+
+    .section-5 .not-caption,
+    .section-8 .not-caption,
+    .section-5 .thinner-list,
     .section-8 .thinner-list {
         display: block;
         vertical-align: middle;
     }
-    
+
     .not-caption {
         margin-right: 0px;
         margin-bottom: 10px;
     }
-    
+
     .section-8 .no-inside{
         background-position: right center;
     }
-    
+
     .section-5 .no-inside{
         background-position: right center;
         background-size: 30% 100%;
-    }  
-    
+    }
+
     .section-4{
         background-size: 115% auto;
     }
 }
 
 @media (max-width: 580px){
-    
+
     body {
         font: normal 13px 'PT Sans', Verdana, Arial, Tahoma;
     }
-    
+
     .section-1 .text{
         padding-top: 25px;
         font-size: 160%
     }
-    
+
     .item-number{
         margin: 0px 2px;
     }
-    
+
     .item-number span{
         margin: 0px 1px;
         width: 18px;
-        font: normal 130% 'kelson_sans_ruregular', Verdana, Arial, Tahoma;
+        font: normal 130% 'Exo 2', sans-serif;;
         border-radius: 2px;
     }
-    
+
     .labels span {
         width: 34px;
     }
-    
+
     .countdown{
         padding: 35px 30px 45px;
     }
-    
+
     .soc-section span,
-    .item-jury p, 
+    .item-jury p,
     .footer {
         font-size: 100%;
     }
-    
+
     .soc-section {
         padding: 30px 0px 0px;
     }
-    
+
     .section{
         padding-left: 10px;
         padding-right: 10px;
     }
-    
+
     .section-1{
         padding-top: 20px;
         padding-bottom: 30px;
     }
-    
+
     .section-2,
     .section-4,
     .section-7{
         background-size: cover;
     }
-    
+
     .thumbs-up li{
         padding: 3px 0px 3px 20px;
         background-size: 10px;
     }
-    
+
     .cross li{
         background-position: left 8px;
         padding: 3px 0px 3px 20px;
     }
-    
+
     .partners {
         margin-bottom: 20px;
     }
-    
+
     .partners img{
         max-width: 100px;
     }
-    
+
     .item-jury{
         padding: 10px 20px 25px;
     }
@@ -1096,31 +1158,31 @@ a:active{
     .section-2 .text{
         padding: 20px 15px;
     }
-    
+
     .inside-section{
         padding: 0;
     }
-    
+
     .text{
         line-height: 132%;
     }
-    
+
     .standard-list li{
         line-height: 145%;
     }
-    
+
     .thumbs-up li {
         background-position: left 4px;
     }
-    
+
     .cross li {
         background-position: left 6px;
     }
-    
+
     .when-block {
         margin-top: 0px;
     }
-    
+
     .contacts {
         display: block;
         padding: 0px 0px 20px 0px;
@@ -1129,35 +1191,35 @@ a:active{
 
 @media (max-width: 330px){
     .main-caption, .not-caption {
-        font: normal 160% 'kelson_sans_ruregular', Verdana, Arial, Tahoma;
+        font: normal 160% 'Exo 2', sans-serif;;
     }
-    
+
     .text {
         font-size: 124%;
     }
-    
+
     .section-2 .text {
         margin-top: 20px;
     }
-    
+
     .caption-indent {
         margin-bottom: 20px;
     }
-    
+
     .section-indent {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    
+
     .when-block{
         display: block;
     }
-    
+
     .place{
         text-align: center;
         padding: 15px 50px 90px;
     }
-    
+
     .date-event{
         padding-bottom: 15px;
         margin-bottom: 15px;

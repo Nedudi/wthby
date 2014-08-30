@@ -4,9 +4,9 @@
     	<title>WTH</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-        
+
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        
+
         <!-- Open Graph Meta Data -->
         <meta property="og:site_name" content="wth.by" />
         <meta property="og:locale" content="ru_ru" />
@@ -15,7 +15,7 @@
         <meta property="og:url" content="http://wth.by" />
         <meta property="og:description" content="What the Hack 2014 - 44-часовой хакатон для разработчиков" />
         <meta property="og:image" content="http://wth.by/images/wth-main.png" />
-        
+
         <!-- Twitter Cards Meta -->
         <meta name="twitter:card" value="summary"/>
         <meta name="twitter:site" value="@wthby" />
@@ -27,277 +27,293 @@
 
         <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
         <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+        <link href='http://fonts.googleapis.com/css?family=Exo+2&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
         <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.countdown.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    </head> 
+
+        <!-- l20n -->
+        <link rel="localization" href="locales/browser.json">
+        <script type="text/javascript" src="js/l20n.js"></script>
+
+    </head>
 
 <body>
+
+
     <section class="section section-1 centered">
-        <div class="logo">
-            <img src="images/wth-logo.png" alt="WTH" />
+
+        <div class="lang">
+          <a data-lang="ru-RU" href="#ru">ru</a>
+          <a data-lang="en-US" href="#en">en</a>
         </div>
-        
+
+        <div class="logo">
+            <img src="images/wth-logo.png" alt="What the hack" />
+        </div>
+
         <h1 class="text">
-            Правильный хакатон для разработчиков<br />
-            <span class="date">15-17 октября в Минске</span>
+            <span data-l10n-id="eventTitle"></span><br />
+            <span class="date" data-l10n-id="eventWhenTitle"></span>
         </h1>
         <div class="countdown">
             <div id="defaultCountdown"></div>
             <div class="labels">
-                <span>месяц</span>
-                <span>дней</span>
-                <span>часов</span>
-                <span>минут</span>
-                <span>секунд</span>
+                <span data-l10n-id="month"></span>
+                <span data-l10n-id="days"></span>
+                <span data-l10n-id="hours"></span>
+                <span data-l10n-id="minutes"></span>
+                <span data-l10n-id="seconds"></span>
             </div>
         </div>
         <div class="reg-btn-wrapper">
-            <a href="" title="" class="reg-btn white-btn">Зарегистрироваться</a>
+            <a href="" title="" class="reg-btn white-btn" data-l10n-id="join"></a>
         </div>
-        
+
         <div class="soc-section centered">
-            <span>Мы в социальных сетях:</span>
-            
+            <span data-l10n-id="weAreAtSocial"></span>
+
             <a href="" title="" class="soc-link facebook-link"></a>
             <a href="" title="" class="soc-link twitter-link"></a>
             <a href="" title="" class="soc-link vk-link"></a>
         </div>
     </section>
-    
+
     <section class="section section-2 section-indent centered">
         <h2 class="main-caption">
-            <span>WTF? WTH!</span>
-            <span>Что это?</span>
+            <span data-l10n-id="wtfwth"></span>
+            <span data-l10n-id="whatThat"></span>
         </h2>
-        
+
         <p class="text wth">
-            What the Hack 2014 &mdash;<br />
-            это 44-часовой хакатон для разработчиков,<br /> 
-            который впервые будет проводиться <br />
-            в Беларуси в рамках <a href="" title="" class="gold-link">european code week</a> (#codeEU)
+          <span data-l10n-id="eventDesc"></span>
+          <a target="_blank" href="http://events.codeweek.eu/" title="codeweek" class="gold-link"><span data-l10n-id="eventDescAnchor"></span></a>
+          <a target="_blank" href="http://twitter.com/codeEU" title="codeEU" class="blue-link"><span data-l10n-id="eventDescTag"></span></a>
         </p>
     </section>
-    
+
     <section class="section section-3 section-indent centered">
         <div class="inside-section">
-            <h2 class="main-caption">Основная идея и цель</h2>
-            
-            <p class="text">
-                Всего за 44 часа сделать прототип и/или демо,<br />
-                которое не оставит равнодушными зал и жюри.
-            </p>
+            <h2 class="main-caption" data-l10n-id="mainGoal"></h2>
+            <p class="text" data-l10n-id="mainGoalText"></p>
         </div>
     </section>
-    
+
     <section class="section section-4 section-indent centered">
-        <h2 class="main-caption caption-indent">Что будет на What the Hack?</h2>
-        
+        <h2 class="main-caption caption-indent" data-l10n-id="whatWillBe"></h2>
+
         <ul class="standard-list thumbs-up">
-            <li>Возможность поэкспериментировать с новыми технологиями.</li>
-            <li>мастер-классы от ведущих белорусских и западных разработчиков.</li>
-            <li>Возможность получить совет от менторов международного уровня.</li>
-            <li>Помощь в освоении практически любой технологии.</li>
-            <li>Возможность наконец попробовать реализовать то, на что всегда не хватало времени.</li>
-            <li>Показать всем, что получилось, и получить призы от организаторов и самых крутых белорусских комьюнити.</li>
-            <li>Много позитива, полезных знакомств и знаний.</li>
+            <li data-l10n-id="whatWillBe1"></li>
+            <li data-l10n-id="whatWillBe2"></li>
+            <li data-l10n-id="whatWillBe3"></li>
+            <li data-l10n-id="whatWillBe4"></li>
+            <li data-l10n-id="whatWillBe5"></li>
+            <li data-l10n-id="whatWillBe6"></li>
+            <li data-l10n-id="whatWillBe7"></li>
         </ul>
-        
+
         <p class="centered">
-            <a href="" title="" class="expand-link">Чего НЕ будет на What the Hack?</a>    
+            <a href="" title="" class="expand-link" data-l10n-id="whatWillNotBe"></a>
         </p>
     </section>
-    
+
     <section class="section section-5 centered">
         <div class="no-inside">
-            <span class="not-caption">НЕ будет</span>
+            <span class="not-caption" data-l10n-id="whatWillNotBeShort"></span>
             <ul class="thinner-list">
-                <li>хайринга,</li>
-                <li>рекламы,</li>
-                <li>пафоса,</li>
-                <li>промывания мозгов,</li>
-                <li>скучных лекций,</li>
-                <li>мутных людей.</li>
+                <li data-l10n-id="whatWillNotBe1"></li>
+                <li data-l10n-id="whatWillNotBe2"></li>
+                <li data-l10n-id="whatWillNotBe3"></li>
+                <li data-l10n-id="whatWillNotBe4"></li>
+                <li data-l10n-id="whatWillNotBe5"></li>
+                <li data-l10n-id="whatWillNotBe6"></li>
             </ul>
         </div>
     </section>
-    
+
     <section class="section section-6 section-indent centered">
-        <h2 class="main-caption centered">Мы приветствуем</h2>
+        <h2 class="main-caption centered" data-l10n-id="weLike"></h2>
         <div class="wrapper-good">
-            <ul class="standard-list thumbs-up">
-                <li>Любые идеи, от полезных до смешных и безумных.</li>
-                <li>Использование новых технологий и подходов.</li>
-                <li>Нестандартный подход к реализации стандартных решений. </li>
-                <li>Сумасшедшие прототипы, сделанные на коленке.</li>
-                <li>Красивые демки, даже если они работают в одном браузере или OC.</li>
-                <li>Пробы ради проб, эксперементы ради эксперементов.</li>
-                <li>И просто попытки сделать хоть что-то ради саморазвития или развлечения.</li>
-            </ul>
+          <ul class="standard-list thumbs-up">
+            <li data-l10n-id="weLike1"></li>
+            <li data-l10n-id="weLike2"></li>
+            <li data-l10n-id="weLike3"></li>
+            <li data-l10n-id="weLike4"></li>
+            <li data-l10n-id="weLike5"></li>
+            <li data-l10n-id="weLike6"></li>
+            <li data-l10n-id="weLike7"></li>
+          </ul>
         </div>
     </section>
-    
+
     <section class="section section-7 centered">
-        <h2 class="main-caption">Кто может участвовать?</h2>
-        
+        <h2 class="main-caption" data-l10n-id="whoCan"></h2>
+
         <ul class="standard-list cross">
-            <li>Web-разработчики.</li>
-            <li>Разработчики мобильных приложений.</li>
-            <li>И другие разработчики: любого уровня знаний, специализации, пола, возраста  и взглядов.</li>
+            <li data-l10n-id="whoCan1"></li>
+            <li data-l10n-id="whoCan2"></li>
+            <li data-l10n-id="whoCan3"></li>
         </ul>
-        
+
         <p class="centered">
-            <a href="" title="" class="expand-link">Кого мы НЕ ждём?</a>    
+            <a href="" title="" class="expand-link" data-l10n-id="whoCanNot"></a>
         </p>
     </section>
-    
+
     <section class="section section-8 centered">
         <div class="no-inside">
-            <span class="not-caption">Мы НЕ ждем:</span>
+            <span class="not-caption" data-l10n-id="whoCanNotShort"></span>
             <ul class="thinner-list">
-                <li>HR (простите, друзья).</li>
-                <li>Неадекватных людей, пессимистов,<br /> консерваторов.</li>
-                <li>"Идейных стартаперов" <span>(т.е. людей,<br /> умеющих только лишь генерировать<br /> безумные идеи и постоянно ищущих<br /> программистов для их реализации)</span>.</li>
+                <li data-l10n-id="whoCanNot1"></li>
+                <li data-l10n-id="whoCanNot2"></li>
+                <li data-l10n-id="whoCanNot3"></li>
             </ul>
         </div>
     </section>
     <div class="wave"></div>
     <section class="section section-9 section-indent centered">
-        <h2 class="main-caption">В чем особенность?</h2>
-        
-        <p class="singularity">
-            В отличие от многих хакатонов, проводимых в Минске,<br />
-            целью What the Hack НЕ является создание готового стартапа<br /> 
-            или законченного прототипа идеи, которая спасет мир.<br />
-            (Хотя, если вы спасете мир, мы только за :)
+        <h2 class="main-caption"  data-l10n-id="whatIsFishka"></h2>
+
+        <p class="singularity" data-l10n-id="whatIsFishkaText">
+
         </p>
-        
-        <p class="wtf-wth">
-            What The Hack 2014 — хакатон от и для разработчиков.
+
+        <p class="wtf-wth" data-l10n-id="whatIsFishkaShort">
+
         </p>
-        
-        <p class="target">
-            Основная цель — новые знания и навыки, знакомство с интересными людьми,<br /> 
-            самореализация, возможность провести время с пользой и халявные печеньки :)
+
+        <p class="target" data-l10n-id="whatIsFishkaTarget">
+
         </p>
     </section>
-    
+
     <section class="section section-10 section-indent centered">
         <div class="nomination">
-            <h2 class="main-caption caption-indent">Номинации</h2>
-            
+            <h2 class="main-caption caption-indent" data-l10n-id="nominations"></h2>
+
             <ul class="standard-list centered">
-                <li>Best what the Hack 2014.</li>
-                <li>Самый эффектный хак.</li>
-                <li>Самый технологичный хак.</li>
-                <li>Самый непонятный хак.</li>
-                <li>Тот самый хак от самой красивой девушки.</li>
-                <li>Cамый бесполезный кусок кода.</li>
+                <li data-l10n-id="nomination1"></li>
+                <li data-l10n-id="nomination2"></li>
+                <li data-l10n-id="nomination3"></li>
+                <li data-l10n-id="nomination4"></li>
+                <li data-l10n-id="nomination5"></li>
+                <li data-l10n-id="nomination6"></li>
             </ul>
         </div>
     </section>
-    
+
     <section class="section section-11 section-indent centered">
-        <h2 class="main-caption caption-indent">Жюри</h2>
-        
+        <h2 class="main-caption caption-indent" data-l10n-id="jury"></h2>
+
         <div class="item-jury">
             <img src="images/girl.png" alt="" />
-            <span class="name-jury">Павел Фиолетовый</span>
-            <span class="post-jury">Web-designer</span>
+            <span class="name-jury">Вася</span>
+            <span class="post-jury">Web-dev</span>
             <p>
-                I am a graduate from the University of Florida 
-                where I received a Bachelors in Graphics and Web Design.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, eum voluptatum, velit r
             </p>
-            
-            <a href="" title="" class="soc-link facebook-link"></a>
-            <a href="" title="" class="soc-link twitter-link"></a>
-            <a href="" title="" class="soc-link vk-link"></a>
+
+            <a href="http://facebook.com/" title="" class="soc-link facebook-link"></a>
+            <a href="http://twitter.com/" title="" class="soc-link twitter-link"></a>
+            <a href="http://vk.com/" title="" class="soc-link vk-link"></a>
         </div>
-        
+
         <div class="item-jury">
-            <img src="images/girl.png" alt="" />
-            <span class="name-jury">Павел Фиолетовый</span>
-            <span class="post-jury">Web-designer</span>
+            <img src="http://beerhold.it/200/200" alt="" />
+            <span class="name-jury">Иван</span>
+            <span class="post-jury">Web-dev</span>
             <p>
-                I am a graduate from the University of Florida 
-                where I received a Bachelors in Graphics and Web Design.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, eum voluptatum, velit r
             </p>
-            
-            <a href="" title="" class="soc-link facebook-link"></a>
-            <a href="" title="" class="soc-link twitter-link"></a>
-            <a href="" title="" class="soc-link vk-link"></a>
+
+            <a href="http://facebook.com/" title="" class="soc-link facebook-link"></a>
+            <a href="http://twitter.com/" title="" class="soc-link twitter-link"></a>
+            <a href="http://vk.com/" title="" class="soc-link vk-link"></a>
         </div>
-        
+
         <div class="item-jury">
-            <img src="images/girl.png" alt="" />
-            <span class="name-jury">Павел Фиолетовый</span>
-            <span class="post-jury">Web-designer</span>
+            <img src="http://beerhold.it/300/300" alt="" />
+            <span class="name-jury">Петя</span>
+            <span class="post-jury">Web-dev</span>
             <p>
-                I am a graduate from the University of Florida 
-                where I received a Bachelors in Graphics and Web Design.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, eum voluptatum, velit r
             </p>
-            
-            <a href="" title="" class="soc-link facebook-link"></a>
-            <a href="" title="" class="soc-link twitter-link"></a>
-            <a href="" title="" class="soc-link vk-link"></a>
+
+            <a href="http://facebook.com/" title="" class="soc-link facebook-link"></a>
+            <a href="http://twitter.com/" title="" class="soc-link twitter-link"></a>
+            <a href="http://vk.com/" title="" class="soc-link vk-link"></a>
         </div>
     </section>
-    
+
     <section class="section section-12 section-indent centered">
-        <h2 class="main-caption caption-indent">Призы</h2>
-        <p>Главный приз</p>
+        <h2 class="main-caption caption-indent" data-l10n-id="prizes"></h2>
+        <!-- <p>Главный приз</p> -->
         <div class="middle-row">
-            <span>Майка</span>
+            <!-- <span>Майка</span> -->
             <img src="images/prize.svg" alt="Главный приз" />
-            <span>Набор девелопера</span>
+          <!--   <span>Набор девелопера</span> -->
         </div>
-        <p>Поощрительные призы</p>
+        <!-- <p>Поощрительные призы</p> -->
     </section>
-    
+
     <section class="section centered section-13">
         <div id="map"></div>
         <div class="when-block">
-            <h2 class="main-caption">Когда и где?</h2>
+            <h2 class="main-caption" data-l10n-id="whenAndWhere"></h2>
             <div class="place">
-                <span class="date-event">15-17 октября 2014</span>
-                <p>
-                    Business Club Imaguru<br /> 
-                    Минск (Фабрициуса, 4)
+                <span class="date-event" data-l10n-id="when"></span>
+                <p  data-l10n-id="where">
+
                 </p>
             </div>
             <img src="images/imaguru-logo.png" alt="Imaguru" class="imaguru" />
         </div>
     </section>
-    
+
     <section class="section section-14 section-indent centered">
-        <h2 class="main-caption partners-caption">Информационные партнеры</h2>
-        
+        <h2 class="main-caption partners-caption" data-l10n-id="organizers"></h2>
+
         <ul class="partners">
             <li>
-                <img src="images/xb.png" alt="XB Software" />
+                <a target="_blank" href="http://xbsoftware.com"><img src="images/xb.png" alt="XB Software" /></a>
             </li>
             <li>
-                <img src="images/imaguru.png" alt="Imaguru" />
+                <a target="_blank" href="http://imaguru.co"><img src="images/imaguru.png" alt="Imaguru" /></a>
             </li>
             <li>
-                <img src="images/h5by.png" alt="HTML5.by" />
+                <a target="_blank" href="http://html5.by"><img src="images/h5by.png" alt="HTML5.by" /></a>
             </li>
         </ul>
-        
-        <a href="" title="" class="reg-btn blue-btn">Зарегистрироваться</a>
+
+        <h2 class="main-caption partners-caption" data-l10n-id="infoPartners"></h2>
+
+        <ul class="partners">
+<!--             <li>
+    <a target="_blank" href="http://xbsoftware.com"><img src="images/xb.png" alt="XB Software" /></a>
+</li> -->
+        </ul>
+
+
+        <a href="" title="" class="reg-btn blue-btn" data-l10n-id="join"></a>
     </section>
     <footer class="footer centered">
-        <span class="copyright dark-text">Copyright © 2014 WTH All rights reserved.</span>
-        
+
+
+
+        <span class="copyright dark-text">Copyleft <span class="copy">&copy;</span> 2014 WTH.BY <br>Do what the hack you want.<br>We don't care.</span>
+
         <div class="contacts">
-            <span class="dark-text">Контакты:</span>
-            <p>+375 29 778-55-84 (Дмитрий Дудин)</p>
-            <p>+375 29 123-45-67</p>
-            <a href="mailto:wthack@gmail.com">wthack@gmail.com</a>
+            <span class="dark-text" data-l10n-id="contacts"></span>
+            <p>+375 29 778-55-84 Дима <strong class="dark-text">XB Software</strong></p>
+            <a class="dark-text"  href="mailto:dudin@xbsoftware.com">dudin@xbsoftware.com</a>
+            <p>+375 29 251-21-37 Настя <strong class="dark-text">Imaguru</strong></p>
+            <a class="dark-text"  href="mailto:n@bel.biz">n@bel.biz</a>
         </div>
         <div class="social">
-            <span class="dark-text">Мы в социальных сетях:</span>
+            <span class="dark-text" data-l10n-id="weAreAtSocial"></span>
             <a href="" title="" class="soc-link facebook-link"></a>
             <a href="" title="" class="soc-link twitter-link"></a>
             <a href="" title="" class="soc-link vk-link"></a>
@@ -306,4 +322,3 @@
 </body>
 
 </html>
-
