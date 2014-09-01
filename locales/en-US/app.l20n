@@ -1,41 +1,38 @@
 <eventTitle "True hackathon for true geeks">
 <eventWhenTitle "October 17-19, Minsk">
 
-<month "месяцев">
-<days "дней">
-<hours "часов">
-<minutes "минут">
-<seconds "секунд">
+<month "month">
+<days "days">
+<hours "hours">
+<minutes "minutes">
+<seconds "seconds">
 
 <join "JOIN WTH">
-
 
 <weAreAtSocial "Social:">
 <wtfwth "WTF? WTH!">
 <whatThat "What’s this?">
 
-
 <eventDesc """
   What the Hack 2014 <br>
   is a 44-hour hackathon for developers <br>
-  that will be held in Belarus for the first time <br>
-  within the scope of
+  that will be held in Belarus during <br>
 """>
 
 <eventDescAnchor "europe code week">
 <eventDescTag "(#codeEU)">
 
 <mainGoal "The main idea and goal">
-<mainGoalText "Within 44 hours the participants should create a prototype <br>and / or a demo that will impress the jury and the audience">
+<mainGoalText "Within 44 hours the participants will have to create a prototype<br> and / or a demo that will impress the jury and the audience">
 
 
-<whatWillBe "What can you expect from What the Hack?">
+<whatWillBe   "What to expect from What the Hack?">
 <whatWillBe1  "An opportunity to experiment with new technologies.">
-<whatWillBe2  "Master classes from leading Belarusian and European developers.">
-<whatWillBe3  "A great chance to get advice from mentors of international level.">
-<whatWillBe4  "Assistance in learning almost any known technology.">
-<whatWillBe5  "A real chance to realize some idea that has always been postponed due to the lack of time.">
-<whatWillBe6  "Estimation of the result of your efforts and a possibility <br>to win prizes from the organizers and the coolest Belarusian communities.">
+<whatWillBe2  "Master classes from leading Belarusian and European hackers.">
+<whatWillBe3  "A great chance to get advice from international mentors.">
+<whatWillBe4  "Assistance in learning any technology.">
+<whatWillBe5  "A real chance to realize your idea rapidly.">
+<whatWillBe6  "Prizes from the organizers and the coolest Belarusian communities.">
 <whatWillBe7  "Getting lots of fun, useful contacts and valuable knowledge.">
 
 <whatWillNotBe "You won’t meet at What the Hack:">
@@ -50,12 +47,12 @@
 
 <weLike "We are open to">
 <weLike1 "Any ideas, from useful to ridiculous and mad ones.">
-<weLike2 "The use of new technologies and approaches.">
+<weLike2 "Use of new technologies and approaches.">
 <weLike3 "Innovative approaches to the implementation of standard solutions.">
-<weLike4 "“Quick and dirty” prototypes.">
+<weLike4 "“Quick and draft” prototypes.">
 <weLike5 "Beautiful demos even if they run in one browser or in one OS.">
-<weLike6 "Tests for the sake of tests, experiments for experiments.">
-<weLike7 "Just attempts to do something for self-development or entertainment.">
+<weLike6 "Tests for testing, experiments for experiments.">
+<weLike7 "Just attempts to code something for self-development or entertainment.">
 
 <whoCan "Who can participate?">
 <whoCan1 "Web-developers.">
@@ -66,28 +63,29 @@
 <whoCanNotShort "We DO NOT expect:">
 <whoCanNot1 "HR (sorry, friends).">
 <whoCanNot2 "Inadequate people, pessimists, fuddy-duddies.">
-<whoCanNot3 '"Conceptual startup creators" <span>(i.e., people who are only able to generate crazy <br>ideas and are constantly looking for programmers <br>to implement this ideas)</span>.'>
+<whoCanNot3 '"Conceptual startup creators" <span>(i.e., people who are only able to generate crazy <br>ideas and are constantly looking for programmers <br>to implement those ideas)</span>.'>
 
 <whatIsFishka "What is so special about What the Hack?">
 <whatIsFishkaText """
-  Unlike many Hackathons held in Minsk What the Hack is not aimed <br>
+  What the Hack is not aimed <br>
   at creating a ready startup or a complete prototype <br>
   of the idea that will save the whole world.<br>
-  (But we do not mind if you save the world :)
+  (But you re encouraged to save the world :)
 
 """>
-<whatIsFishkaShort "What the Hack 2014 is a hackathon <strong>from</strong> and <strong>for</strong> developers.">
-<whatIsFishkaTarget "The main goal is acquiring new knowledge and skills, meeting interesting people, self-realizing, spending time usefully and eating free cookies :)">
+<whatIsFishkaShort "What the Hack 2014 is a hackathon <strong>from</strong> developers <strong>for</strong> developers.">
+<whatIsFishkaTarget "The main goal is acquiring new knowledge and skills, meeting interesting people, self-realizing, coding, coding, and enjoy coding :)">
 
 <nominations "Nominations">
 <nomination1 "The best What the Hack 2014">
 <nomination2 "The most spectacular hack.">
 <nomination3 "The most technological hack.">
 <nomination4 "The most tangled hack.">
-<nomination5 "The very hack from the most beautiful girl.">
+<nomination5 "The best female beauty-smart-hack.">
 <nomination6 "The most useless piece of code.">
 
 <prizes "Prizes">
+<prizesText "Yet to be announced">
 <jury "The Jury">
 
 <whenAndWhere "Time and Place">
