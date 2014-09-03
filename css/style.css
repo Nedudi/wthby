@@ -493,8 +493,16 @@ a:active{
     background: url('../images/wave-pattern.png') top repeat-x;
 }
 
+.wave-down {
+    position: relative;
+    margin-bottom: -7px;
+    z-index: 1;
+    height: 7px;
+    background: url('../images/wave-down-pattern.png') top repeat-x;
+}
+
 .section-10{
-    background: url('../images/wave-down-pattern.png') top repeat-x  #34495e;
+    background: top repeat-x  #34495e;
 }
 
 .nomination{
