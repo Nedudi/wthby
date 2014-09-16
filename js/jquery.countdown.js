@@ -50,9 +50,11 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
           sec: 0,
           millisec: 0
         };
-        if (diff >= (30.333 * 86400)) {
-          dateData.month = Math.floor(diff / (30.333 * 86400));
-          diff -= dateData.month * 31 * 86400;
+
+        if (diff >= (30 * 86400)) {
+          dateData.month = Math.floor(diff / (30 * 86400));
+        //  debugger;
+          diff -= dateData.month * 30 * 86400;
         }
         if (diff >= 86400) {
           dateData.days = Math.floor(diff / 86400);
@@ -79,7 +81,7 @@ and GPL-3.0 (http://opensource.org/licenses/GPL-3.0) licenses.
         }
         return num;
       };
-      
+
       this.wrapperNumber = function(num){
         num = num + '';
         str = '<div class="item-number"><span>' + num[0] + '</span><span>' + num[1] + '</span></div>';

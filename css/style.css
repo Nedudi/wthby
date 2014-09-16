@@ -521,6 +521,7 @@ a:active{
 .item-jury{
     display: inline-block;
     padding: 30px 20px;
+    vertical-align: top;
 }
 
 .item-jury img{
@@ -548,6 +549,7 @@ a:active{
     font-size: 56%;
     max-width: 280px;
     margin: 20px 0px;
+    vertical-align: top;
 }
 
 .soc-link{
@@ -772,6 +774,7 @@ a:active{
     .item-jury p,
     .footer{
         font-size: 80%;
+        vertical-align: top;
     }
 
     .reg-btn-wrapper{
@@ -851,6 +854,7 @@ a:active{
 
     .item-jury {
         padding: 0px 20px 45px;
+        vertical-align: top;
     }
 
     .contacts {
@@ -867,11 +871,21 @@ a:active{
     }
 
     .partners {
-        margin-bottom: 50px;
+      margin-bottom: 50px;
+    }
+
+    .partners img{
+      max-width:200px;
+      max-height:100px;
+    }
+
+    .partners-info img{
+      max-width:200px;
+      max-height:30px;
     }
 
     .no-inside {
-        padding: 100px 0px;
+      padding: 100px 0px;
     }
 }
 
@@ -955,6 +969,7 @@ a:active{
     .item-jury p,
     .footer {
         font-size: 80%;
+        vertical-align: top;
     }
 
     .section-1 .text br,
@@ -983,12 +998,14 @@ a:active{
         display: block;
         font-size: 120%;
         padding: 20px 20px 35px;
+        vertical-align: top;
 
     }
 
     .item-jury p {
         max-width: 300px;
         margin: 20px auto;
+        vertical-align: top;
     }
 
     .middle-row span{
@@ -1159,6 +1176,7 @@ a:active{
 
     .item-jury{
         padding: 10px 20px 25px;
+        vertical-align: top;
     }
 }
 
