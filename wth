@@ -1,0 +1,18 @@
+server {
+    listen 80;
+    server_name www.wth.by;
+    return 301 $scheme://wth.by$request_uri;
+}
+
+server {
+    listen  	 80;
+    server_name  wth.by;
+    root /home/wth;
+    index index.html;
+    autoindex on;
+
+  location / {
+
+  }
+
+}

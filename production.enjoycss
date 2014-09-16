@@ -1,0 +1,37 @@
+server {
+    listen 80;
+    server_name www.enjoycss.com;
+    return 301 $scheme://enjoycss.com$request_uri;
+}
+
+server {
+    listen  	 80;
+    server_name  enjoycss.com;
+
+    location ~ ^/(images/|img/|lib/|ico/|javascript/|js/|css/|stylesheets/|flash/|media/|static/|robots.txt|humans.txt|favicon.ico) {
+      root /home/ecss/production.enjoycss/public;
+      access_log off;
+      expires max;
+    }
+
+    error_page 500 502 503 504 /50x.html;
+        location = /50x.html {
+        root   /home/ecss/pages;
+    }
+
+    location ~ /* {
+        proxy_pass http://localhost:3000;
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-for $remote_addr;
+		proxy_set_header Host $host;
+		proxy_connect_timeout 60;
+		proxy_send_timeout 90;
+		proxy_read_timeout 90;
+		proxy_redirect off;
+		proxy_set_header Connection close;
+		proxy_pass_header Content-Type;
+		proxy_pass_header Content-Disposition;
+		proxy_pass_header Content-Length;
+    }
+}
+
