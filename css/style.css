@@ -257,17 +257,6 @@ a:active{
     text-align: center;
 }
 
-#defaultCountdown:before{
-    display: block;
-    content: '';
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    margin-top: -1px;
-    width: 100%;
-    height: 2px;
-    background-color: #2388db;
-}
 
 .item-number{
     display: inline-block;
@@ -598,7 +587,7 @@ a:active{
 }
 
 .middle-row img{
-    padding: 35px;
+	padding: 35px;
 }
 
 .middle-row span{
