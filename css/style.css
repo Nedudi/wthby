@@ -701,12 +701,12 @@ a:active{
 }
 
 .copyright .copy{
-  -webkit-transform: rotate(180deg);
+/*  -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   -khtml-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  transform: rotate(180deg);*/
   display: inline-block;
 }
 
@@ -734,6 +734,16 @@ a:active{
 .footer .soc-link{
     margin-top: 5px;
 }
+
+    .partners img{
+      max-width:200px;
+      max-height:120px;
+    }
+
+    .partners-info img{
+      max-width:160px;
+      max-height:100px;
+    }
 
 /* responsive */
 
@@ -863,19 +873,12 @@ a:active{
       margin-bottom: 50px;
     }
 
-    .partners img{
-      max-width:200px;
-      max-height:100px;
-    }
-
-    .partners-info img{
-      max-width:200px;
-      max-height:30px;
-    }
 
     .no-inside {
       padding: 100px 0px;
     }
+
+
 }
 
 @media (max-width: 900px){
