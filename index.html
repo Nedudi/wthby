@@ -1,161 +1,171 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    	<title>WTH</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<head>
+    <title>WTH</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
 
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 
-        <!-- Open Graph Meta Data -->
-        <meta property="og:site_name" content="wth.by" />
-        <meta property="og:locale" content="ru_ru" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Правильный хакатон для разработчиков 17 октября в Минске" />
-        <meta property="og:url" content="http://wth.by" />
-        <meta property="og:description" content="What the Hack 2014 - 44-часовой хакатон для разработчиков" />
-        <meta property="og:image" content="http://wth.by/images/wth-main.png" />
+    <!-- Open Graph Meta Data -->
+    <meta property="og:site_name" content="wth.by"/>
+    <meta property="og:locale" content="ru_ru"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Правильный хакатон для разработчиков 27 марта в Минске"/>
+    <meta property="og:url" content="http://wth.by"/>
+    <meta property="og:description" content="What the Hack 2015 - 44-часовой хакатон для разработчиков"/>
+    <meta property="og:image" content="http://wth.by/images/wth-main.png"/>
 
-        <!-- Twitter Cards Meta -->
-        <meta name="twitter:card" value="summary"/>
-        <meta name="twitter:site" value="@wthby" />
-        <meta name="twitter:creator" value="@wthby" />
-        <meta name="twitter:url" value="http://wth.by"/>
-        <meta name="twitter:title" value="Правильный хакатон для разработчиков 17 октября в Минске"/>
-        <meta name="twitter:description" value="What the Hack 2014 - 44-часовой хакатон для разработчиков"/>
-        <meta name="twitter:image" value="http://wth.by/images/wth-main.png" />
+    <!-- Twitter Cards Meta -->
+    <meta name="twitter:card" value="summary"/>
+    <meta name="twitter:site" value="@wthby"/>
+    <meta name="twitter:creator" value="@wthby"/>
+    <meta name="twitter:url" value="http://wth.by"/>
+    <meta name="twitter:title" value="Правильный хакатон для разработчиков 27 марта в Минске"/>
+    <meta name="twitter:description" value="What the Hack 2015 - 44-часовой хакатон для разработчиков"/>
+    <meta name="twitter:image" value="http://wth.by/images/wth-main.png"/>
 
-        <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
-        <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
-        <link href='http://fonts.googleapis.com/css?family=Exo+2&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Exo+2&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
 
-        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery.countdown.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
-        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
-        <!-- l20n -->
-        <link rel="localization" href="locales/browser.json">
-        <script type="text/javascript" src="js/l20n.js?123"></script>
+    <!-- l20n -->
+    <link rel="localization" href="locales/browser.json">
+    <script type="text/javascript" src="js/l20n.js?123"></script>
 
-    </head>
+</head>
 
 <body>
 
 
-    <section class="section section-1 centered">
+<section class="section section-1 centered">
 
-        <div class="lang">
-          <a data-lang="ru-RU" href="#ru">ru</a>
-          <a data-lang="en-US" href="#en">en</a>
+    <div class="lang">
+        <a data-lang="ru-RU" href="#ru">ru</a>
+        <a data-lang="en-US" href="#en">en</a>
+    </div>
+
+    <div class="logo">
+        <img src="images/wth-logo.svg" alt="What the hack"/>
+    </div>
+
+    <h1 class="text">
+        <span data-l10n-id="eventTitle"></span><br/>
+        <span class="date" data-l10n-id="eventWhenTitle"></span>
+    </h1>
+
+    <div class="countdown">
+        <div id="defaultCountdown"></div>
+        <div class="labels">
+            <span data-l10n-id="month"></span>
+            <span data-l10n-id="days"></span>
+            <span data-l10n-id="hours"></span>
+            <span data-l10n-id="minutes"></span>
+            <span data-l10n-id="seconds"></span>
+        </div>
+    </div>
+    <div class="reg-btn-wrapper">
+        <a href="https://www.facebook.com/groups/wthby" target="blank" title=""
+           class="reg-btn white-btn"
+           data-l10n-id="newsInFBGroup"></a>
+    </div>
+
+    <!-- Program -->
+        <div style="margin-top: 30px;" class="reg-btn-wrapper">
+            <a href="http://html5.by/blog/wth2/" target="blank" title="" class="reg-btn white-btn"
+               data-l10n-id="program"></a>
         </div>
 
-        <div class="logo">
-            <img src="images/wth-logo.svg" alt="What the hack" />
-        </div>
+    <div class="soc-section centered">
+        <span data-l10n-id="weAreAtSocial"></span>
 
-        <h1 class="text">
-            <span data-l10n-id="eventTitle"></span><br />
-            <span class="date" data-l10n-id="eventWhenTitle"></span>
-        </h1>
-        <div class="countdown">
-            <div id="defaultCountdown"></div>
-            <div class="labels">
-                <span data-l10n-id="month"></span>
-                <span data-l10n-id="days"></span>
-                <span data-l10n-id="hours"></span>
-                <span data-l10n-id="minutes"></span>
-                <span data-l10n-id="seconds"></span>
-            </div>
-        </div>
-        <div class="reg-btn-wrapper">
-            <a href="http://wthcodeeu.eventbrite.com" target="blank" title="" class="reg-btn white-btn" data-l10n-id="join"></a>
-        </div>
+        <a href="https://www.facebook.com/groups/wthby/" target="_blank" title="" class="soc-link facebook-link"></a>
+        <a href="https://twitter.com/wthby" target="_blank" title="" class="soc-link twitter-link"></a>
+        <a href="http://vk.com/wthby" target="_blank" title="" class="soc-link vk-link"></a>
+    </div>
+</section>
 
-        <div class="soc-section centered">
-            <span data-l10n-id="weAreAtSocial"></span>
+<section class="section section-2 section-indent centered">
+    <h2 class="main-caption">
+        <span data-l10n-id="wtfwth"></span>
+        <span data-l10n-id="whatThat"></span>
+    </h2>
 
-            <a href="https://www.facebook.com/groups/wthby/" target="_blank" title="" class="soc-link facebook-link"></a>
-            <a href="https://twitter.com/wthby" target="_blank" title="" class="soc-link twitter-link"></a>
-            <a href="http://vk.com/wthby" target="_blank" title="" class="soc-link vk-link"></a>
-        </div>
-    </section>
+    <p class="text wth">
+        <span data-l10n-id="eventDesc"></span>
+        <!--<a target="_blank" href="http://events.codeweek.eu/" title="codeweek" class="gold-link"><span
+                data-l10n-id="eventDescAnchor"></span></a>
+        <a target="_blank" href="https://twitter.com/CodeWeekEU" title="codeEU" class="blue-link"><span
+                data-l10n-id="eventDescTag"></span></a>-->
+    </p>
+</section>
 
-    <section class="section section-2 section-indent centered">
-        <h2 class="main-caption">
-            <span data-l10n-id="wtfwth"></span>
-            <span data-l10n-id="whatThat"></span>
-        </h2>
+<section class="section section-3 section-indent centered">
+    <div class="inside-section">
+        <h2 class="main-caption" data-l10n-id="mainGoal"></h2>
 
-        <p class="text wth">
-          <span data-l10n-id="eventDesc"></span>
-          <a target="_blank" href="http://events.codeweek.eu/" title="codeweek" class="gold-link"><span data-l10n-id="eventDescAnchor"></span></a>
-          <a target="_blank" href="https://twitter.com/CodeWeekEU" title="codeEU" class="blue-link"><span data-l10n-id="eventDescTag"></span></a>
-        </p>
-    </section>
+        <p class="text" data-l10n-id="mainGoalText"></p>
+    </div>
+</section>
 
-    <section class="section section-3 section-indent centered">
-        <div class="inside-section">
-            <h2 class="main-caption" data-l10n-id="mainGoal"></h2>
-            <p class="text" data-l10n-id="mainGoalText"></p>
-        </div>
-    </section>
+<div class="wave"></div>
+<section class="section section-9 section-indent centered">
+    <h2 class="main-caption" data-l10n-id="whatIsFishka"></h2>
 
-    <div class="wave"></div>
-    <section class="section section-9 section-indent centered">
-        <h2 class="main-caption"  data-l10n-id="whatIsFishka"></h2>
+    <p class="singularity" data-l10n-id="whatIsFishkaText">
 
-        <p class="singularity" data-l10n-id="whatIsFishkaText">
+    </p>
 
-        </p>
+    <p class="wtf-wth" data-l10n-id="whatIsFishkaShort">
 
-        <p class="wtf-wth" data-l10n-id="whatIsFishkaShort">
+    </p>
 
-        </p>
+    <p class="target" data-l10n-id="whatIsFishkaTarget">
 
-        <p class="target" data-l10n-id="whatIsFishkaTarget">
+    </p>
+</section>
+<div class="wave-down"></div>
 
-        </p>
-    </section>
-    <div class="wave-down"></div>
+<section class="section section-4 section-indent centered">
+    <h2 class="main-caption caption-indent" data-l10n-id="whatWillBe"></h2>
 
-    <section class="section section-4 section-indent centered">
-        <h2 class="main-caption caption-indent" data-l10n-id="whatWillBe"></h2>
+    <ul class="standard-list thumbs-up">
+        <li data-l10n-id="whatWillBe1"></li>
+        <li data-l10n-id="whatWillBe2"></li>
+        <li data-l10n-id="whatWillBe3"></li>
+        <li data-l10n-id="whatWillBe4"></li>
+        <li data-l10n-id="whatWillBe5"></li>
+    </ul>
 
-        <ul class="standard-list thumbs-up">
-            <li data-l10n-id="whatWillBe1"></li>
-            <li data-l10n-id="whatWillBe2"></li>
-            <li data-l10n-id="whatWillBe3"></li>
-            <li data-l10n-id="whatWillBe4"></li>
-            <li data-l10n-id="whatWillBe5"></li>
-            <li data-l10n-id="whatWillBe6"></li>
-            <li data-l10n-id="whatWillBe7"></li>
+    <p class="centered">
+        <a href="" title="" class="expand-link" data-l10n-id="whatWillNotBe"></a>
+    </p>
+</section>
+
+<section class="section section-5 centered">
+    <div class="no-inside">
+        <span class="not-caption" data-l10n-id="whatWillNotBeShort"></span>
+        <ul class="thinner-list">
+            <li data-l10n-id="whatWillNotBe1"></li>
+            <li data-l10n-id="whatWillNotBe2"></li>
+            <li data-l10n-id="whatWillNotBe3"></li>
+            <li data-l10n-id="whatWillNotBe4"></li>
+            <li data-l10n-id="whatWillNotBe5"></li>
         </ul>
+    </div>
+</section>
 
-        <p class="centered">
-            <a href="" title="" class="expand-link" data-l10n-id="whatWillNotBe"></a>
-        </p>
-    </section>
+<section class="section section-6 section-indent centered">
+    <h2 class="main-caption centered" data-l10n-id="weLike"></h2>
 
-    <section class="section section-5 centered">
-        <div class="no-inside">
-            <span class="not-caption" data-l10n-id="whatWillNotBeShort"></span>
-            <ul class="thinner-list">
-                <li data-l10n-id="whatWillNotBe1"></li>
-                <li data-l10n-id="whatWillNotBe2"></li>
-                <li data-l10n-id="whatWillNotBe3"></li>
-                <li data-l10n-id="whatWillNotBe4"></li>
-                <li data-l10n-id="whatWillNotBe5"></li>
-                <li data-l10n-id="whatWillNotBe6"></li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section section-6 section-indent centered">
-        <h2 class="main-caption centered" data-l10n-id="weLike"></h2>
-        <div class="wrapper-good">
-          <ul class="standard-list thumbs-up">
+    <div class="wrapper-good">
+        <ul class="standard-list thumbs-up">
             <li data-l10n-id="weLike1"></li>
             <li data-l10n-id="weLike2"></li>
             <li data-l10n-id="weLike3"></li>
@@ -163,251 +173,374 @@
             <li data-l10n-id="weLike5"></li>
             <li data-l10n-id="weLike6"></li>
             <li data-l10n-id="weLike7"></li>
-          </ul>
-        </div>
-    </section>
-
-    <section class="section section-7 centered">
-        <h2 class="main-caption" data-l10n-id="whoCan"></h2>
-
-        <ul class="standard-list cross">
-            <li data-l10n-id="whoCan1"></li>
-            <li data-l10n-id="whoCan2"></li>
-            <li data-l10n-id="whoCan3"></li>
         </ul>
+    </div>
+</section>
 
-        <p class="centered">
-            <a href="" title="" class="expand-link" data-l10n-id="whoCanNot"></a>
+<section class="section section-7 centered">
+    <h2 class="main-caption" data-l10n-id="whoCan"></h2>
+
+    <ul class="standard-list cross">
+        <li data-l10n-id="whoCan1"></li>
+        <li data-l10n-id="whoCan2"></li>
+        <li data-l10n-id="whoCan3"></li>
+    </ul>
+
+    <p class="centered">
+        <a href="" title="" class="expand-link" data-l10n-id="whoCanNot"></a>
+    </p>
+</section>
+
+<section class="section section-8 centered">
+    <div class="no-inside">
+        <span class="not-caption" data-l10n-id="whoCanNotShort"></span>
+        <ul class="thinner-list">
+            <li data-l10n-id="whoCanNot1"></li>
+            <li data-l10n-id="whoCanNot2"></li>
+            <li data-l10n-id="whoCanNot3"></li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-10 section-indent centered">
+    <div class="nomination">
+        <h2 class="main-caption caption-indent" data-l10n-id="nominations"></h2>
+
+        <ul class="standard-list centered">
+            <li data-l10n-id="nomination1"></li>
+            <li data-l10n-id="nomination2"></li>
+            <li data-l10n-id="nomination3"></li>
+            <li data-l10n-id="nomination4"></li>
+            <li data-l10n-id="nomination5"></li>
+            <li data-l10n-id="nomination6"></li>
+            <li data-l10n-id="nomination7"></li>
+            <li data-l10n-id="nomination8"></li>
+        </ul>
+    </div>
+</section>
+
+<section class="section section-17 section-indent centered">
+    <h2 class="main-caption" data-l10n-id="postTitle"></h2>
+    <br>
+
+    <p class="text" data-l10n-id="postText"></p>
+
+    <p class="text" data-l10n-id="postText1"></p>
+
+    <p class="text" data-l10n-id="postText2"></p>
+
+    <p class="text" data-l10n-id="postText3"></p>
+
+    <p class="text" data-l10n-id="postText4"></p>
+
+    <p class="text" data-l10n-id="postText5"></p>
+</section>
+
+<section class="section section-15 section-indent centered">
+    <h2 class="main-caption caption-indent" data-l10n-id="videoReport"></h2>
+    <iframe src="http://slide.ly/embed/2469561c77039c4805a3aa434e351d74/autoplay/0" width="900" height="506"
+            frameborder="0" scrolling="no" allowfullscreen></iframe>
+</section>
+
+<section class="section section-16 section-indent centered">
+    <h2 class="main-caption" data-l10n-id="mediaLink"></h2>
+    <br>
+
+    <p class="text" data-l10n-id="mediaLinkText"></p>
+
+    <p class="text" data-l10n-id="mediaLinkText1"></p>
+</section>
+
+<section class="section section-11 section-indent centered">
+    <h2 class="main-caption caption-indent" data-l10n-id="jury"></h2>
+
+    <div class="item-jury">
+        <img src="/images/dudes/nastia.png" alt=""/>
+        <span class="name-jury">Анастасия Хоменкова</span>
+        <span class="post-jury"><a target="_blank" class="gold-link" href="http://bel.biz/">Bel.biz</a></span>
+
+        <p>
+            COO and со-учредитель <a target="_blank" class="gold-link" href="http://bel.biz/">Bel.biz</a>. Сооснователь
+            клуба <a target="_blank" class="gold-link" href="http://Imaguru.co">Imaguru</a>. Создатель и куратор школы
+            <a target="_blank" class="gold-link" href="http://TechMinsk.com">TechMinsk.com</a>. Создала и развивает
+            сообщество Startup Belarus
         </p>
-    </section>
+        <a target="_blank" href="http://facebook.com/nastia.khamiankova" title="" class="soc-link facebook-link"></a>
+        <a target="_blank" href="http://twitter.com/nastiabelbiz" title="" class="soc-link twitter-link"></a>
+        <!--a href="http://vk.com/nastia.khamiankova" title="" class="soc-link vk-link"></a-->
+    </div>
 
-    <section class="section section-8 centered">
-        <div class="no-inside">
-            <span class="not-caption" data-l10n-id="whoCanNotShort"></span>
-            <ul class="thinner-list">
-                <li data-l10n-id="whoCanNot1"></li>
-                <li data-l10n-id="whoCanNot2"></li>
-                <li data-l10n-id="whoCanNot3"></li>
-            </ul>
-        </div>
-    </section>
 
-    <section class="section section-10 section-indent centered">
-        <div class="nomination">
-            <h2 class="main-caption caption-indent" data-l10n-id="nominations"></h2>
+    <div class="item-jury">
+        <img src="/images/dudes/dudin.png" alt=""/>
+        <span class="name-jury">Дмитрий Дудин</span>
+        <span class="post-jury"><a target="_blank" class="gold-link" href="https://www.facebook.com/groups/4front/">4Front,</a> <a
+                target="_blank" class="gold-link" href="http://html5.by">html5.by</a></span>
 
-            <ul class="standard-list centered">
-                <li data-l10n-id="nomination1"></li>
-                <li data-l10n-id="nomination2"></li>
-                <li data-l10n-id="nomination3"></li>
-                <li data-l10n-id="nomination4"></li>
-                <li data-l10n-id="nomination5"></li>
-                <li data-l10n-id="nomination6"></li>
-            </ul>
-        </div>
-    </section>
+        <p>
+            Фронтендер, блогер (<a target="_blank" class="gold-link" href="http://html5.by">html5.by</a>), спикер,
+            организатор и инициатор мероприятий для веб-разработчиков (<a class="gold-link" target="_blank"
+                                                                          href="https://www.facebook.com/groups/4front/">4front</a>
+            и <a target="_blank" class="gold-link" href="http://wth.by">what the hack</a>).
+        </p>
+        <a target="_blank" href="http://facebook.com/nedudi" title="" class="soc-link facebook-link"></a>
+        <a target="_blank" href="http://twitter.com/nedudi" title="" class="soc-link twitter-link"></a>
+        <a target="_blank" href="http://vk.com/nedudi" title="" class="soc-link vk-link"></a>
+    </div>
 
-    <section class="section section-11 section-indent centered">
-        <h2 class="main-caption caption-indent" data-l10n-id="jury"></h2>
+    <div class="item-jury">
+        <img src="/images/dudes/misha.png" alt=""/>
+        <span class="name-jury">Михаил Ларченко</span>
+        <span class="post-jury"><a target="_blank" class="gold-link"
+                                   href="https://www.facebook.com/groups/webnotbombs/">Web Not Bombs</a></span>
 
-        <div class="item-jury">
-            <img src="/images/dudes/nastia.png" alt="" />
-            <span class="name-jury">Анастасия Хоменкова</span>
-            <span class="post-jury"><a  target="_blank" class="gold-link" href="http://bel.biz/">Bel.biz</a></span>
-            <p>
-              COO and со-учредитель <a  target="_blank" class="gold-link" href="http://bel.biz/">Bel.biz</a>. Сооснователь клуба <a  target="_blank" class="gold-link" href="http://Imaguru.co">Imaguru</a>. Создатель и куратор школы <a  target="_blank" class="gold-link" href="http://TechMinsk.com">TechMinsk.com</a>. Создала и развивает сообщество Startup Belarus
+        <p>
+            Веб-разработчик, блогер (<a target="_blank" class="gold-link" href="http://blog.mobila.name">mobila.name</a>),
+            спикер. Один из основателей сообщества и митапов <a target="_blank" class="gold-link" href="http://wnb.by/">Web
+            Not Bombs</a> и <a target="_blank" class="gold-link" href="http://wnb.by/">Girls Not Bombs</a>, позитивный
+            фронтендер и честный судья.
+        </p>
+        <a target="_blank" href="http://facebook.com/larchanka" title="" class="soc-link facebook-link"></a>
+        <a target="_blank" href="http://twitter.com/ashorror" title="" class="soc-link twitter-link"></a>
+        <!--             <a  target="_blank" href="http://vk.com/nedudi" title="" class="soc-link vk-link"></a> -->
+    </div>
+
+    <div class="item-jury">
+        <img src="/images/dudes/eugen.png" alt=""/>
+        <span class="name-jury">Евгений Невгень</span>
+        <span class="post-jury"><a target="_blank" class="gold-link"
+                                   href="https://www.facebook.com/groups/webnotbombs/">Web Not Bombs: Design &
+            UX.</a></span>
+
+        <p>
+            Дизайнер, креативный директор <a target="_blank" href="http://pandadoc.com" class="gold-link">PandaDoc</a>.
+            Победитель Garage48 и Startup Weekend. Организатор митапов <a class="gold-link" target="_blank"
+                                                                          href="https://www.facebook.com/groups/webnotbombs/">Web
+            Not Bombs: Design & UX.</a>
+        </p>
+        <a target="_blank" href="http://facebook.com/nevgen" title="" class="soc-link facebook-link"></a>
+        <a target="_blank" href="http://twitter.com/e_nevgen" title="" class="soc-link twitter-link"></a>
+        <!--             <a href="http://vk.com/nedudi" title="" class="soc-link vk-link"></a> -->
+    </div>
+
+    <div class="item-jury">
+        <img src="/images/dudes/mk.jpg" alt=""/>
+        <span class="name-jury">Максим Кожух</span>
+        <span class="post-jury"><a target="_blank" class="gold-link" href="https://www.facebook.com/groups/4front/">4Front</a></span>
+
+        <p>
+            Front-end разработчик в <a target="_blank" href="http://xbsoftware.com" class="gold-link">XB Software</a>,
+            спикер. Постоянный участник 4Front митапов. Автор множества крутых openSource проектов.
+        </p>
+        <a target="_blank" href="https://www.facebook.com/mkozhukh" title="" class="soc-link facebook-link"></a>
+        <!--   <a target="_blank" href="http://twitter.com/e_nevgen" title="" class="soc-link twitter-link"></a> -->
+        <!--             <a href="http://vk.com/nedudi" title="" class="soc-link vk-link"></a> -->
+    </div>
+
+    <div class="item-jury">
+        <img src="/images/dudes/nikita.png" alt=""/>
+        <span class="name-jury">Никита Вельмаскин</span>
+        <span class="post-jury"><a target="_blank" class="gold-link" href="http://www.uchetkin.by">Учеткин.by</a></span>
+
+        <p>
+            Основатель «<a target="_blank" class="gold-link" href="http://www.uchetkin.by">Учеткин.by</a>», со-автор
+            первой белорусской конференции разработчиков игр «<a target="_blank" class="gold-link"
+                                                                 href="http://www.gds2014.by/">GDS</a>». Первый в мире
+            человек, который-таки написал свой «<a target="_blank" class="gold-link" href="http://www.pf-pda.net/">Pocket
+            F.A.L.L.O.U.T.</a>». Или просто - Человек-bat’ник!
+        </p>
+        <a target="_blank" href="https://www.facebook.com/velmaskin" title="" class="soc-link facebook-link"></a>
+    </div>
+    <div class="item-jury">
+        <img src="/images/dudes/anna.jpg" alt=""/>
+        <span class="name-jury">Анна Селезнева</span>
+        <span class="post-jury"><a target="_blank" class="gold-link" href="http://cpeople.ru/">CreativePeople</a></span>
+
+        <p>
+            Креативный фронтенд-разработчик с более чем 10-летним опытом работы в веб. Участвовала в качестве докладчика
+            на конференциях Яндекс, wstdays, 404fest, Digital Bay. 6 лет сотрудничает с компанией <a target="_blank"
+                                                                                                     class="gold-link"
+                                                                                                     href="http://cpeople.ru/">CreativePeople</a>.
+        </p>
+        <a target="_blank" href="https://www.facebook.com/anna.selezniova" title="" class="soc-link facebook-link"></a>
+    </div>
+    <div class="item-jury">
+        <img src="/images/dudes/vladimir-ya.jpg" alt=""/>
+        <span class="name-jury">Владимир Епифанов</span>
+        <span class="post-jury"><a target="_blank" class="gold-link" href="http://yandex.ru/">Yandex</a></span>
+
+        <p>
+            Разработчик в <a target="_blank" class="gold-link" href="http://yandex.ru/">Яндексе</a>. Делает прототипы и стенды, пьёт много кофе, ведёт внутренний подкаст Яндекс.Журнала.
+            Любит Clojure. Делал бэкенд Погоды, АПИ Яндекс.Фоток, OpenID. Сделал целиком <a target="_blank" class="gold-link" href="http://p.ya.ru/">p.ya.ru</a>. В свободное время
+            жарит стейки.
+        </p>
+        <a target="_blank" href="https://twitter.com/voldmar" title="" class="soc-link twitter-link"></a>
+    </div>
+    <div class="item-jury">
+        <img src="/images/dudes/alexandr.png" alt=""/>
+        <span class="name-jury">Александр Чекан</span>
+        <span class="post-jury"><a target="_blank" class="gold-link" href="http://www.tut.by/">TUT.BY</a></span>
+
+        <p>
+            Генеральный директор TUT.BY с 2012 года. Автор и разработчик нескольких белорусских контент-проектов. Защитил степень International Executive MBA в Baltic Management Institute. Любит путешествовать и собирает монеты.
+        </p>
+        <a target="_blank" href="https://www.facebook.com/alexander.chekan" title="" class="soc-link facebook-link"></a>
+    </div>
+</section>
+
+<section class="section centered section-13">
+    <div id="map" style="width: 500px; height: 500px;"></div>
+    <div class="when-block">
+        <h2 class="main-caption" data-l10n-id="whenAndWhere"></h2>
+
+        <div class="place">
+            <span class="date-event" data-l10n-id="when"></span>
+
+            <p data-l10n-id="where">
+
             </p>
-            <a target="_blank" href="http://facebook.com/nastia.khamiankova" title="" class="soc-link facebook-link"></a>
-            <a target="_blank" href="http://twitter.com/nastiabelbiz" title="" class="soc-link twitter-link"></a>
-            <!--a href="http://vk.com/nastia.khamiankova" title="" class="soc-link vk-link"></a-->
         </div>
+        <img src="images/imaguru-logo.png" alt="Imaguru" class="imaguru"/>
+    </div>
+</section>
+
+<section class="section section-14 section-indent centered">
+    <h2 class="main-caption partners-caption" data-l10n-id="organizers"></h2>
+    <ul class="xb">
+        <li>
+            <a target="_blank" href="http://xbsoftware.com"><img src="images/xb.jpg" alt="XB Software"/></a>
+        </li>
+    </ul>
+    <ul class="partners">
+        <li>
+            <a target="_blank" href="http://imaguru.co"><img src="images/imaguru.png" alt="Imaguru"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://html5.by"><img src="images/h5by.jpg" alt="HTML5.by"/></a>
+        </li>
+    </ul>
+
+    <h2 class="main-caption partners-caption" data-l10n-id="partners"></h2>
+
+    <ul class="partners">
+        <li>
+            <a target="_blank" href="http://yandex.ru"><img src="images/yandex-logo.png" alt="Yandex"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://github.com"><img src="images/GitHub_Logo.jpg" alt="GitHub"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://www.redbull.com/ru/ru"><img src="images/Red_Bull.svg" alt="RedBull"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.jetbrains.com/"><img src="images/logo/jb.png" alt="JetBrains"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://webnotbombs.net/"><img src="images/logo/wnb.jpg" alt="Web Not Bombs"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://www.onega.by/"><img src="images/logo/onega.jpg" alt="Onega"/></a>
+        </li>
+    </ul>
+
+    <h2 class="main-caption partners-caption" data-l10n-id="infoPartners"></h2>
+
+    <ul class="partners partners-info">
+        <li>
+            <a target="_blank" href="http://bel.biz"><img src="images/logo/bel-biz.png"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://rubyconference.by"><img src="images/logo/rc.jpg"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://itshare.by"><img src="images/logo/itshare.png"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://vk.com/teamspark"><img src="images/logo/logo_black_incubator.png"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://dev.by"><img src="images/dev.by.png"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://multschool.by/"><img src="images/logo/mult.png"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://vk.com/vyachorki"><img src="images/logo/vyachorki.jpg"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.facebook.com/4frontby"><img src="images/4front.jpg"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://solit.isoligorsk.org/"><img src="images/logo/solit.jpg"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://fdconf.by/"><img src="images/logo/fcconf.jpg"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.facebook.com/pages/CGtalkby/117375591666352"><img src="images/logo/cg.jpg"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.facebook.com/groups/DesignKitchen/"><img src="images/logo/dk.jpg"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.facebook.com/groups/ggjby/"><img src="images/logo/ggjm.jpg"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.facebook.com/MinskPythonMeetup?fref=ts"><img src="images/logo/mpm.jpg"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.facebook.com/groups/TheRollingScopes/"><img
+                    src="images/logo/rollingscopes.png"/></a>
+        </li>
+        <li>
+            <a target="_blank" href="https://www.facebook.com/groups/iosby/"><img src="images/logo/cocoaheads.png"/></a>
+        </li>
+        <!--           <li>
+                      <a target="_blank" href="http://wnb.by"><img src="images/logo/wnb.png"/></a>
+                  </li> -->
+    </ul>
 
 
-        <div class="item-jury">
-            <img src="/images/dudes/dudin.png" alt="" />
-            <span class="name-jury">Дмитрий Дудин</span>
-            <span class="post-jury"><a  target="_blank" class="gold-link" href="https://www.facebook.com/groups/4front/">4Front,</a> <a  target="_blank" class="gold-link" href="http://html5.by">html5.by</a></span>
-            <p>
-              Фронтендер, блогер (<a  target="_blank" class="gold-link" href="http://html5.by">html5.by</a>), спикер, организатор и инициатор мероприятий для веб-разработчиков (<a class="gold-link"  target="_blank" href="https://www.facebook.com/groups/4front/">4front</a> и <a  target="_blank" class="gold-link" href="http://wth.by">what the hack</a>).
-            </p>
-            <a target="_blank" href="http://facebook.com/nedudi" title="" class="soc-link facebook-link"></a>
-            <a target="_blank" href="http://twitter.com/nedudi" title="" class="soc-link twitter-link"></a>
-            <a target="_blank" href="http://vk.com/nedudi" title="" class="soc-link vk-link"></a>
-        </div>
+    <a href="http://www.eventbrite.com/e/what-the-hack-2-tickets-15858402910" target="blank" title=""
+       class="reg-btn blue-btn" data-l10n-id="join"></a>
+</section>
+<footer class="footer centered">
 
-        <div class="item-jury">
-            <img src="/images/dudes/tasoduval.png" alt="" />
-            <span class="name-jury">Taso Du Val</span>
-            <span class="post-jury"><a  target="_blank" class="gold-link" href="http://toptal.com/">TopTal</a></span>
-            <p>
-              In the past lead engineer at Fotolog (acquired by Hi-Media for $100m) and Slide (acquired by Google for $228M). Currently Ceo of <a  target="_blank" class="gold-link" href="http://toptal.com/">toptal</a></span>
-            </p>
-<!--             <a target="_blank" href="http://facebook.com/nastia.khamiankova" title="" class="soc-link facebook-link"></a>
-            <a target="_blank" href="http://twitter.com/nastiabelbiz" title="" class="soc-link twitter-link"></a> -->
-            <!--a href="http://vk.com/nastia.khamiankova" title="" class="soc-link vk-link"></a-->
-        </div>
+    <span class="copyright dark-text">Copyright <span class="copy">&copy;</span> 2015 XB Software <br>Do what the hack you want.<br>We don't care.</span>
 
-        <div class="item-jury">
-            <img src="/images/dudes/misha.png" alt="" />
-            <span class="name-jury">Михаил Ларченко</span>
-            <span class="post-jury"><a target="_blank" class="gold-link" href="https://www.facebook.com/groups/webnotbombs/">Web Not Bombs</a></span>
-            <p>
-              Веб-разработчик, блогер (<a  target="_blank" class="gold-link" href="http://blog.mobila.name">mobila.name</a>), спикер. Один из основателей сообщества и митапов <a target="_blank" class="gold-link" href="http://wnb.by/">Web Not Bombs</a> и <a target="_blank" class="gold-link" href="http://wnb.by/">Girls Not Bombs</a>, позитивный фронтендер и честный судья.
-            </p>
-            <a target="_blank" href="http://facebook.com/larchanka" title="" class="soc-link facebook-link"></a>
-            <a target="_blank" href="http://twitter.com/ashorror" title="" class="soc-link twitter-link"></a>
-<!--             <a  target="_blank" href="http://vk.com/nedudi" title="" class="soc-link vk-link"></a> -->
-        </div>
+    <div class="contacts">
+        <span class="dark-text" data-l10n-id="contacts"></span>
 
-        <div class="item-jury">
-            <img src="/images/dudes/eugen.png" alt="" />
-            <span class="name-jury">Евгений Невгень</span>
-            <span class="post-jury"><a  target="_blank" class="gold-link" href="https://www.facebook.com/groups/webnotbombs/">Web Not Bombs: Design & UX.</a></span>
-            <p>
-              Дизайнер, креативный директор <a target="_blank" href="http://pandadoc.com" class="gold-link">PandaDoc</a>. Победитель Garage48 и Startup Weekend. Организатор митапов <a class="gold-link"  target="_blank" href="https://www.facebook.com/groups/webnotbombs/">Web Not Bombs: Design & UX.</a>
-            </p>
-            <a  target="_blank" href="http://facebook.com/nevgen" title="" class="soc-link facebook-link"></a>
-            <a target="_blank" href="http://twitter.com/e_nevgen" title="" class="soc-link twitter-link"></a>
-            <!--             <a href="http://vk.com/nedudi" title="" class="soc-link vk-link"></a> -->
-        </div>
+        <p>+375 29 778-55-84 Дима <strong class="dark-text">XB Software</strong></p>
+        <a class="dark-text" href="mailto:dudin@xbsoftware.com">dudin@xbsoftware.com</a>
 
-        <div class="item-jury">
-            <img src="/images/dudes/mk.jpg" alt="" />
-            <span class="name-jury">Максим Кожух</span>
-            <span class="post-jury"><a  target="_blank" class="gold-link" href="https://www.facebook.com/groups/4front/">4Front</a></span>
-            <p>
-               Front-end разработчик в <a target="_blank" href="http://xbsoftware.com" class="gold-link">XB Software</a>, спикер. Постоянный участник 4Front митапов. Автор множества крутых openSource проектов.
-            </p>
-            <a  target="_blank" href="https://www.facebook.com/mkozhukh" title="" class="soc-link facebook-link"></a>
-          <!--   <a target="_blank" href="http://twitter.com/e_nevgen" title="" class="soc-link twitter-link"></a> -->
-            <!--             <a href="http://vk.com/nedudi" title="" class="soc-link vk-link"></a> -->
-        </div>
+        <p>+375 29 251-21-37 Настя <strong class="dark-text">Imaguru</strong></p>
+        <a class="dark-text" href="mailto:n@bel.biz">n@bel.biz</a>
+    </div>
+    <div class="social">
+        <span class="dark-text" data-l10n-id="weAreAtSocial"></span>
+        <a href="https://www.facebook.com/groups/wthby/" target="_blank" title="" class="soc-link facebook-link"></a>
+        <a href="https://twitter.com/wthby" target="_blank" title="" class="soc-link twitter-link"></a>
+        <a href="http://vk.com/wthby" target="_blank" title="" class="soc-link vk-link"></a>
+    </div>
+</footer>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-        <div class="item-jury">
-            <img src="/images/dudes/dima.png" alt="" />
-            <span class="name-jury">Дмитрий Герасимов</span>
-            <span class="post-jury"><a  target="_blank" class="gold-link" href="https://www.facebook.com/groups/TheRollingScopes/">The Rolling Scopes</a></span>
-            <p>
-              Веб-разработчик. Со-основатель фронтенд-сообщества The Rolling Scopes.
-            </p>
-        </div>
+    ga('create', 'UA-60036455-1', 'auto');
+    ga('send', 'pageview');
 
-		<div class="item-jury">
-            <img src="/images/dudes/vladimir.png" alt="" />
-            <span class="name-jury">Владимир Бурдуков</span>
-            <span class="post-jury"><a  target="_blank" class="gold-link" href="https://www.facebook.com/groups/iosby/">CocoaHeads Belarus</a></span>
-            <p>
-              iOS разработчик, один из лидеров независимого сообщества iOS\OS X разработчиков CocoaHeads Belarus.
-            </p>
-            <a target="_blank" href="https://www.facebook.com/chippcheg" title="" class="soc-link facebook-link"></a>
-        </div>
-
-        <div class="item-jury">
-            <img src="/images/dudes/sergei.jpg" alt="" />
-            <span class="name-jury">Сергей Борисюк</span>
-            <span class="post-jury"><a  target="_blank" class="gold-link" href="http://PandaDoc.com">PandaDoc</a></span>
-            <p>
-              Со-основатель успешных проектов <a  target="_blank" class="gold-link" href="http://PandaDoc.com">PandaDoc</a> и <a  target="_blank" class="gold-link" href="http://quoteroller.com">Quote Roller</a>. Опытный разработчик, спикер, активный участник мероприятий для веб-разработчиков.
-            </p>
-            <a target="_blank" href="https://www.facebook.com/sbarysiuk" title="" class="soc-link facebook-link"></a>
-        </div>
-
-        <div class="item-jury">
-            <img src="/images/dudes/nikita.png" alt="" />
-            <span class="name-jury">Никита Вельмаскин</span>
-            <span class="post-jury"><a  target="_blank" class="gold-link" href="http://www.gds2014.by/">GDS Conference</a></span>
-            <p>
-              Основатель «<a  target="_blank" class="gold-link" href="http://www.uchetkin.by">Учеткин.by</a>», со-автор первой белорусской конференции разработчиков игр «<a  target="_blank" class="gold-link" href="http://www.gds2014.by/">GDS</a>». Первый в мире человек, который-таки написал свой «<a  target="_blank" class="gold-link" href="http://www.pf-pda.net/">Pocket F.A.L.L.O.U.T.</a>». Или просто - Человек-bat’ник!
-            </p>
-            <a target="_blank" href="https://www.facebook.com/velmaskin" title="" class="soc-link facebook-link"></a>
-        </div>
-    </section>
-
-    <section class="section section-12 section-indent centered">
-        <h2 class="main-caption caption-indent" data-l10n-id="prizes"></h2>
-        <p data-l10n-id="prizesText"></p>
-        <div class="middle-row">
-            <!-- <span>Майка</span> -->
-            <img src="images/prize.svg" alt="Главный приз" />
-          <!--   <span>Набор девелопера</span> -->
-        </div>
-        <!-- <p>Поощрительные призы</p> -->
-    </section>
-
-    <section class="section centered section-13">
-        <div id="map" style="width: 500px; height: 500px;"></div>
-        <div class="when-block">
-            <h2 class="main-caption" data-l10n-id="whenAndWhere"></h2>
-            <div class="place">
-                <span class="date-event" data-l10n-id="when"></span>
-                <p  data-l10n-id="where">
-
-                </p>
-            </div>
-            <img src="images/imaguru-logo.png" alt="Imaguru" class="imaguru" />
-        </div>
-    </section>
-
-    <section class="section section-14 section-indent centered">
-        <h2 class="main-caption partners-caption" data-l10n-id="organizers"></h2>
-
-        <ul class="partners">
-            <li>
-                <a target="_blank" href="http://xbsoftware.com"><img src="images/xb.png" alt="XB Software" /></a>
-            </li>
-            <li>
-                <a target="_blank" href="http://imaguru.co"><img src="images/imaguru.png" alt="Imaguru" /></a>
-            </li>
-            <li>
-                <a target="_blank" href="http://html5.by"><img src="images/h5by.png" alt="HTML5.by" /></a>
-            </li>
-        </ul>
-
-        <h2 class="main-caption partners-caption" data-l10n-id="infoPartners"></h2>
-
-        <ul class="partners partners-info">
-          <li>
-              <a target="_blank" href="http://bel.biz"><img src="images/logo/bel-biz.png"/></a>
-          </li>
-          <li>
-              <a target="_blank" href="http://wnb.by"><img src="images/logo/wnb.png"/></a>
-          </li>
-
-          <li>
-              <a target="_blank" href="http://itshare.by"><img src="images/logo/itshare.png"/></a>
-          </li>
-          <li>
-              <a target="_blank" href="https://www.facebook.com/groups/TheRollingScopes/"><img src="images/logo/rollingscopes.png"/></a>
-          </li>
-          <li>
-              <a target="_blank" href="https://www.facebook.com/groups/iosby/"><img src="images/logo/cocoaheads.png"/></a>
-          </li>
-<!--           <li>
-              <a target="_blank" href="http://wnb.by"><img src="images/logo/wnb.png"/></a>
-          </li> -->
-        </ul>
-
-
-        <a href="http://wthcodeeu.eventbrite.com" target="blank" title="" class="reg-btn blue-btn" data-l10n-id="join"></a>
-    </section>
-    <footer class="footer centered">
-
-        <span class="copyright dark-text">Copyright <span class="copy">&copy;</span> 2014 XB Software <br>Do what the hack you want.<br>We don't care.</span>
-
-        <div class="contacts">
-            <span class="dark-text" data-l10n-id="contacts"></span>
-            <p>+375 29 778-55-84 Дима <strong class="dark-text">XB Software</strong></p>
-            <a class="dark-text"  href="mailto:dudin@xbsoftware.com">dudin@xbsoftware.com</a>
-            <p>+375 29 251-21-37 Настя <strong class="dark-text">Imaguru</strong></p>
-            <a class="dark-text"  href="mailto:n@bel.biz">n@bel.biz</a>
-        </div>
-        <div class="social">
-            <span class="dark-text" data-l10n-id="weAreAtSocial"></span>
-            <a href="https://www.facebook.com/groups/wthby/" target="_blank" title="" class="soc-link facebook-link"></a>
-            <a href="https://twitter.com/wthby" target="_blank" title="" class="soc-link twitter-link"></a>
-            <a href="http://vk.com/wthby" target="_blank" title="" class="soc-link vk-link"></a>
-        </div>
-    </footer>
+</script>
 </body>
 
 </html>

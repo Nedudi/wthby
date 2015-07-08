@@ -1,5 +1,5 @@
-<eventTitle "Правильный хакатон для разработчиков">
-<eventWhenTitle "17-19 октября в Минске">
+<eventTitle "Первый правильный хакатон для разработчиков">
+<eventWhenTitle "19:00 27-29 марта в Минске">
 
 <month "месяцев">
 <days "дней">
@@ -7,8 +7,10 @@
 <minutes "минут">
 <seconds "секунд">
 
-<join "Зарегистрироваться">
+<join "Программа и инструкции здесь">
 
+<newsInFBGroup "Группа в Facebook">
+<program "Программа">
 
 <weAreAtSocial "Мы в социальных сетях:">
 <wtfwth "WTF? WTH!">
@@ -16,10 +18,8 @@
 
 
 <eventDesc """
-  What the Hack 2014 &mdash;<br />
-  это 44-часовой хакатон для разработчиков,<br />
-  который впервые будет проводиться <br />
-  в Беларуси в рамках
+  What the Hack 2015 &mdash;<br />
+   это 44-часовой хакатон для настоящих и нескучных разработчиков<br />
 """>
 
 <eventDescAnchor "europe code week">
@@ -28,15 +28,24 @@
 <mainGoal "Основная идея и цель">
 <mainGoalText "Всего за 44 часа сделать прототип и/или демо,<br />которое не оставит равнодушными зал и жюри.">
 
+<mediaLink "Media from WTHBY 2014">
+<mediaLinkText "<a disc='asd' class='gold-link' id='link' href='https://www.facebook.com/nedudi/media_set?set=a.870189996332888.100000256873501&type=3'>Фотографии</a> с предыдущего хакатона">
+<mediaLinkText1 "Все видео с лекциями и выступлениями участников можно найти <a disc='asd' class='gold-link' id='link' href='https://www.youtube.com/playlist?list=PLnZ0ef3Uu2puRoEW1Cp2-18M8ker_9tom'>здесь</a>">
+
+<postTitle "What the Hack 2014: Обзоры и Статьи">
+<postText "<a disc='asd' class='gold-link' id='link' href='http://generation.by/news6738.html'>What the hack: ноч з праграмістамі">
+<postText1 "<a disc='asd' class='gold-link' id='link' href='http://bel.biz/news/biznes-novosti/v_minske_proshel_pervyj_pravilnyj_hakaton'>В Минске прошел первый «правильный» хакатон">
+<postText2 "<a disc='asd' class='gold-link' id='link' href='http://habrahabr.ru/post/241473/'>Как программисты решают проблемы">
+<postText3 "<a disc='asd' class='gold-link' id='link' href='http://habrahabr.ru/post/242301/'>Nexus 5 + JavaScript + 48 часов = сенсорная поверхность?">
+<postText4 "<a disc='asd' class='gold-link' id='link' href='http://xbsoftware.com/blog/wth-true-hackathon-true-geeks/'>What The Hack: Правильный хакатон для разработчиков">
+<postText5 "<a disc='asd' class='gold-link' id='link' href='http://xbsoftware.ru/blog/wth-2014-sotsset-turistov-pintoid-drugie-haki/'>What The Hack 2014: Cоц.сеть для туристов, пинтоид и другие хаки (Часть 2)">
 
 <whatWillBe "Что будет на What the Hack?">
 <whatWillBe1  "Возможность поэкспериментировать с новыми технологиями.">
-<whatWillBe2  "Mастер-классы от ведущих белорусских и западных разработчиков.">
-<whatWillBe3  "Возможность получить совет от менторов международного уровня.">
-<whatWillBe4  "Помощь в освоении практически любой технологии.">
-<whatWillBe5  "Возможность наконец попробовать реализовать то, на что всегда не хватало времени.">
-<whatWillBe6  "Показать всем, что получилось, и получить призы от организаторов <br>и самых крутых белорусских комьюнити.">
-<whatWillBe7  "Много позитива, полезных знакомств и знаний.">
+<whatWillBe2  "Помощь в освоении практически любой технологии.">
+<whatWillBe3  "Возможность наконец попробовать реализовать то, на что всегда не хватало времени.">
+<whatWillBe4  "Показать всем, что получилось, и получить призы от организаторов <br>и самых крутых белорусских комьюнити.">
+<whatWillBe5  "Много позитива, полезных знакомств и знаний.">
 
 <whatWillNotBe "Чего НЕ будет на What the Hack?">
 <whatWillNotBeShort "НЕ будет">
@@ -45,8 +54,7 @@
 <whatWillNotBe2  "Рекламы.">
 <whatWillNotBe3  "Пафоса.">
 <whatWillNotBe4  "Промывания мозгов.">
-<whatWillNotBe5  "Скучных лекций.">
-<whatWillNotBe6  "Мутных людей.">
+<whatWillNotBe5  "Мутных людей.">
 
 <weLike "Мы приветствуем">
 <weLike1 "Любые идеи, от полезных до смешных и безумных.">
@@ -76,26 +84,31 @@
   (Хотя, если вы спасете мир, мы только за :)
 """>
 <whatIsFishka "В чем особенность?">
-<whatIsFishkaShort "What The Hack 2014 — хакатон <strong>от</strong> и <strong>для</strong> разработчиков.">
+<whatIsFishkaShort "What The Hack 2015 — хакатон <strong>от</strong> и <strong>для</strong> разработчиков.">
 <whatIsFishkaTarget "Основная цель — новые знания и навыки, знакомство с интересными людьми,<br />самореализация, возможность провести время с пользой и халявные печеньки :)">
 
 <nominations "Номинации">
-<nomination1 "The best What the Hack 2014">
-<nomination2 "Самый эффектный хак.">
-<nomination3 "Самый технологичный хак.">
-<nomination4 "Самый непонятный хак.">
-<nomination5 "Тот самый хак от самой красивой девушки.">
-<nomination6 "Cамый бесполезный кусок кода.">
+<nomination1 "Best what the Hack 2015 (1 место)">
+<nomination2 "Best what the Hack 2015 (2 место)">
+<nomination3 "Best what the Hack 2015 (3 место)">
+<nomination4 "Самый эффектный хак.">
+<nomination5 "Самый технологичный хак.">
+<nomination6 "Самый непонятный хак.">
+<nomination7 "Тот самый хак от самой красивой девушки.">
+<nomination8 "Cамый бесполезный кусок кода.">
 
 <prizes "Призы">
 <prizesText "Будут анонсированы позже">
 <jury "Жюри">
 
+<videoReport "Видео-отчет с What the Hack 2014">
+
 <whenAndWhere "Когда и где?">
-<when "17-19 октября 2014">
+<when "27-29 марта 2015">
 <where "Бизнес-клуб Imaguru<br />Минск (Фабрициуса, 4)">
 
-<organizers "Организаторы и генеральные партнары">
+<organizers "Организаторы">
+<partners "Партнеры">
 <infoPartners "Информационные партнеры">
 
 <contacts "Контакты:">

@@ -1,6 +1,6 @@
 $(function(){
     $('#defaultCountdown').countdown({
-        date: "October 17, 2014 19:00:00"
+        date: "March 27, 2015 19:00:00"
     });
 
     document.l10n.addEventListener('ready', function(a,b){
@@ -83,3 +83,5 @@ $(function(){
         }
     });
 });
+
+

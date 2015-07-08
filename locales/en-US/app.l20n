@@ -1,5 +1,5 @@
 <eventTitle "True hackathon for true geeks">
-<eventWhenTitle "October 17-19, Minsk">
+<eventWhenTitle "19:00 March 27-29, Minsk">
 
 <month "month">
 <days "days">
@@ -7,16 +7,18 @@
 <minutes "minutes">
 <seconds "seconds">
 
-<join "JOIN WTH">
+<join "Check program and instructions here">
+
+<newsInFBGroup "Facebook group">
+<program "Program">
 
 <weAreAtSocial "Social:">
 <wtfwth "WTF? WTH!">
 <whatThat "What’s this?">
 
 <eventDesc """
-  What the Hack 2014 <br>
-  is a 44-hour hackathon for developers <br>
-  that will be held in Belarus during <br>
+  What the Hack 2015 <br>
+  is a 44-hour hackathon for true and jolly web developers <br>
 """>
 
 <eventDescAnchor "europe code week">
@@ -25,15 +27,25 @@
 <mainGoal "The main idea and goal">
 <mainGoalText "Within 44 hours the participants will have to create a prototype<br> and / or a demo that will impress the jury and the audience">
 
+<mediaLink "Media from WTHBY 2014">
+<mediaLinkText "Check the <a disc='asd' class='gold-link' id='link' href='https://www.facebook.com/nedudi/media_set?set=a.870189996332888.100000256873501&type=3'>photos</a> from the previous hackathon">
+<mediaLinkText1 "All the videos with lectures and presentations of participants can be found <a disc='asd' class='gold-link' id='link' href='https://www.youtube.com/playlist?list=PLnZ0ef3Uu2puRoEW1Cp2-18M8ker_9tom'>here</a>">
+
+<postTitle "Press from Last Year's Event">
+<postText "<a disc='asd' class='gold-link' id='link' href='http://generation.by/news6738.html'>What the hack: the night with web developers</a>">
+<postText1 "<a disc='asd' class='gold-link' id='link' href='http://bel.biz/news/biznes-novosti/v_minske_proshel_pervyj_pravilnyj_hakaton'>The first true hackathon was held in Minsk</a>">
+<postText2 "<a disc='asd' class='gold-link' id='link' href='http://habrahabr.ru/post/241473/'>The way our programmers solve their problems</a>">
+<postText3 "<a disc='asd' class='gold-link' id='link' href='http://habrahabr.ru/post/242301/'>Nexus 5 + JavaScript + 48 hours = touch surface?</a>">
+<postText4 "<a disc='asd' class='gold-link' id='link' href='http://xbsoftware.ru/blog/wth-hakaton-dlya-razrabotchikov/'>What The Hack: True Hackathon For True Geeks</a>">
+<postText5 "<a disc='asd' class='gold-link' id='link' href='http://xbsoftware.com/blog/wth-2014-social-network-tourists-pintoid/'>What the Hack 2014: Social Net For Tourists, Pintoid and Other Hacks (Part 2)</a>">
+
 
 <whatWillBe   "What to expect from What the Hack?">
 <whatWillBe1  "An opportunity to experiment with new technologies.">
-<whatWillBe2  "Master classes from leading Belarusian and European hackers.">
-<whatWillBe3  "A great chance to get advice from international mentors.">
-<whatWillBe4  "Assistance in learning any technology.">
-<whatWillBe5  "A real chance to realize your idea rapidly.">
-<whatWillBe6  "Prizes from the organizers and the coolest Belarusian communities.">
-<whatWillBe7  "Getting lots of fun, useful contacts and valuable knowledge.">
+<whatWillBe2  "Assistance in learning any technology.">
+<whatWillBe3  "A real chance to realize your idea rapidly.">
+<whatWillBe4  "Prizes from the organizers and the coolest Belarusian communities.">
+<whatWillBe5  "Getting lots of fun, useful contacts and valuable knowledge.">
 
 <whatWillNotBe "You won’t meet at What the Hack:">
 <whatWillNotBeShort "You WON'T meet">
@@ -42,8 +54,7 @@
 <whatWillNotBe2  "Advertising.">
 <whatWillNotBe3  "Showing off.">
 <whatWillNotBe4  "Brainwashing.">
-<whatWillNotBe5  "Boring lectures.">
-<whatWillNotBe6  "Shady people.">
+<whatWillNotBe5  "Shady people.">
 
 <weLike "We are open to">
 <weLike1 "Any ideas, from useful to ridiculous and mad ones.">
@@ -73,26 +84,31 @@
   (But you re encouraged to save the world :)
 
 """>
-<whatIsFishkaShort "What the Hack 2014 is a hackathon <strong>from</strong> developers <strong>for</strong> developers.">
+<whatIsFishkaShort "What the Hack 2015 is a hackathon <strong>from</strong> developers <strong>for</strong> developers.">
 <whatIsFishkaTarget "The main goal is acquiring new knowledge and skills, meeting interesting people, self-realizing, coding, coding, and enjoy coding :)">
 
 <nominations "Nominations">
-<nomination1 "The best What the Hack 2014">
-<nomination2 "The most spectacular hack.">
-<nomination3 "The most technological hack.">
-<nomination4 "The most tangled hack.">
-<nomination5 "The best female beauty-smart-hack.">
-<nomination6 "The most useless piece of code.">
+<nomination1 "The best What the Hack 2015 (1st place)">
+<nomination2 "The best What the Hack 2015 (2nd place)">
+<nomination3 "The best What the Hack 2015 (3rd place)">
+<nomination4 "The most spectacular hack.">
+<nomination5 "The most technological hack.">
+<nomination6 "The most tangled hack.">
+<nomination7 "The best female beauty-smart-hack.">
+<nomination8 "The most useless piece of code.">
 
 <prizes "Prizes">
 <prizesText "Yet to be announced">
 <jury "The Jury">
 
+<videoReport "Video report from What the Hack 2014">
+
 <whenAndWhere "Time and Place">
-<when "October 17-19, 2014">
+<when "March 27-29, 2015">
 <where "Startup HUB Imaguru<br />Minsk (Fabriciusa str., 4)">
 
-<organizers "Organizers and General Partners">
+<organizers "Organizers">
+<partners "Partners">
 <infoPartners "Information Partners">
 
 <contacts "Contacts:">
